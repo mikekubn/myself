@@ -26,7 +26,7 @@ const nextConfig = {
         test: /\.svg$/i,
         issuer: fileLoaderRule.issuer,
         resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] },
-        use: ['@svgr/webpack', 'url-loader'],
+        use: ['@svgr/webpack'],
       },
     );
     fileLoaderRule.exclude = /\.svg$/i;

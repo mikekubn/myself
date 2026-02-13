@@ -2,19 +2,19 @@
 
 import React from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import { ReactComponent as ReactSvg } from '@/public/technologies/react.svg';
-import { ReactComponent as NextJsSvg } from '@/public/technologies/next-js.svg';
-import { ReactComponent as TypeScriptSvg } from '@/public/technologies/ts.svg';
-import { ReactComponent as TailwindCssSvg } from '@/public/technologies/tailwind.svg';
-import { ReactComponent as VercelSvg } from '@/public/technologies/vercel.svg';
-import { ReactComponent as DigitalOceanSvg } from '@/public/technologies/digitalocean.svg';
-import { ReactComponent as PrismaSvg } from '@/public/technologies/prisma.svg';
-import { ReactComponent as StrapiSvg } from '@/public/technologies/strapi.svg';
-import { ReactComponent as ReactNativeFirebaseSvg } from '@/public/technologies/react-native-firebase.svg';
+import ReactLogo from '../public/technologies/react.svg';
+import NextJsSvg from '../public/technologies/next-js.svg';
+import TypeScriptSvg from '../public/technologies/ts.svg';
+import TailwindCssSvg from '../public/technologies/tailwind.svg';
+import VercelSvg from '../public/technologies/vercel.svg';
+import DigitalOceanSvg from '../public/technologies/digitalocean.svg';
+import PrismaSvg from '../public/technologies/prisma.svg';
+import StrapiSvg from '../public/technologies/strapi.svg';
+import ReactNativeFirebaseSvg from '../public/technologies/react-native-firebase.svg';
 import clsx from 'clsx';
 
 const technologies = [
-  { title: 'React', src: <ReactSvg className="size-[50px] md:size-[60px]" /> },
+  { title: 'React', src: <ReactLogo className="size-[50px] md:size-[60px]" /> },
   { title: 'Next.js', src: <NextJsSvg className="size-[50px] md:size-[60px]" /> },
   { title: 'TypeScript', src: <TypeScriptSvg className="size-[50px] md:size-[60px]" /> },
   { title: 'Tailwind CSS', src: <TailwindCssSvg className="size-[50px] md:size-[60px]" /> },
@@ -39,6 +39,7 @@ const staggerAnimation = {
 };
 
 const Stack = () => {
+  console.log('NextJsSvg:', NextJsSvg);
   const ref = React.useRef<HTMLDivElement>(null);
   const controls = useAnimation();
   const isInView = useInView(ref, { once: true, margin: '0px 0px -100px 0px' });
