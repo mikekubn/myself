@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ReactComponent as Lines } from '@/public/svg/lines.svg';
+import Lines from '@/public/svg/lines.svg';
 import Image from 'next/image';
 import { Metadata } from 'next';
 
