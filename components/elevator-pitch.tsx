@@ -1,6 +1,6 @@
 const ElevatorPitch = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-16 bg-card p-12 rounded-lg">
+    <div className="flex flex-col items-center justify-center gap-16 bg-card p-6 md:p-12 rounded-lg">
       <div className="flex flex-col items-center justify-center gap-2">
         <h2 className="text-2xl font-bold font-mono text-variable">Summary</h2>
         <code className="text-sm text-typography-secondary">A short summary of my skills and experience</code>
