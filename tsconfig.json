@@ -18,10 +18,19 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/public/*": ["../public/*"]
     },
-    "target": "ES2017"
+    "target": "esnext"
   },
-  "include": ["svg.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "**/*.mjs", ".next/dev/types/**/*.ts"],
+  "include": [
+    "svg.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "**/*.mjs",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
