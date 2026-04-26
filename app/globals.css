@@ -1,3 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "tailwind-plugin-typed" {
+  delimiter: "-";
+  typeLetterDuration: 0.1;
+  pauseAfterWordDuration: 2;
+  deleteLetterDuration: 0.05;
+  pauseAfterDeletionDuration: 1;
+}
+
+@theme {
+  /* Backgrounds */
+  --color-primary: #0f1117;
+  --color-secondary: #151924;
+  --color-tertiary: #1c2230;
+
+  /* Text */
+  --color-typography-primary: #e6edf3;
+  --color-typography-secondary: #9aa4b2;
+  --color-typography-muted: #6b7280;
+
+  /* Accent */
+  --color-accent-primary: #4f8cff;
+  --color-accent-hover: #3b6fd8;
+
+  /* Borders */
+  --color-border: #2a3142;
+
+  /* Code */
+  --color-keyword: #c678dd;
+  --color-string: #98c379;
+  --color-function: #61afef;
+  --color-variable: #e06c75;
+  --color-comment: #5c6370;
+
+  /* UI */
+  --color-card: #161b26;
+  --color-hover: #1f2633;
+
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+
+  code,
+  pre {
+    @apply font-mono;
+  }
+}
