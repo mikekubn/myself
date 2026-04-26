@@ -12,9 +12,7 @@
     "lint:ts": "tsc --noEmit"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "pnpm lint:fix"
-    ]
+    "*.{js,jsx,ts,tsx}": ["pnpm lint:fix"]
   },
   "engines": {
     "node": ">=22.22.0",

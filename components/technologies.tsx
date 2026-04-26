@@ -2,7 +2,7 @@ import { TECHNOLOGIES } from "@/utils/configs/technologies";
 
 const Technologies = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-16 bg-card p-12 rounded-lg" id="technologies">
+    <div className="flex flex-col items-center justify-center gap-16 bg-card p-12 rounded-lg">
       <div className="flex flex-col items-center justify-center gap-2">
         <h2 className="text-2xl font-bold font-mono text-variable">Technologies</h2>
         <code className="text-sm text-typography-secondary">Technologies I've been using</code>

@@ -10,7 +10,7 @@ const Intro = () => {
   return (
     <div className="h-screen flex flex-col items-center justify-center gap-14" id="intro">
       <h1 className="text-xl text-typography-secondary tracking-wider">
-        Hi, I&apos;m <span className="font-bold font-mono text-string">Michael Kubin</span>
+        Hi, I&apos;m <span className="font-bold font-mono text-accent-primary">Michael Kubin</span>
       </h1>
       <TextAnimation />
       <div className="flex flex-row flex-wrap items-center justify-center gap-4">
