@@ -17,8 +17,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-RUN mkdir -p /app/data && \
-    chown -R node:node /app/data
+RUN chown -R node:node /app
 
 COPY --from=builder /app/.output ./.output
 
