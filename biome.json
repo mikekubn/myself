@@ -9,6 +9,7 @@
       "!**/node_modules",
       "!**/.next",
       "!dist",
+      "!.output",
       "!.tanstack",
       "!**/.vscode",
       "!**/.cursor",
