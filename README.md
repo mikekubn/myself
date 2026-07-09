@@ -1,5 +1,8 @@
-## Getting Started
+# Getting Started
+
+TanStack Start app, to run this application:
 
 ```bash
-pnpm dev
+pnpm install
+pnpm run dev
 ```

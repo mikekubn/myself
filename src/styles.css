@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@import '@fontsource-variable/dm-sans';
+@import '@fontsource-variable/jetbrains-mono';
+
+@theme {
+  --color-muted: #9aa4b2;
+  --color-border: #2a3142;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: var(--font-sans);
+}
+
+.center-spine::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgb(255 255 255 / 15%) 20%,
+    rgb(255 255 255 / 25%) 50%,
+    rgb(255 255 255 / 15%) 80%,
+    transparent 100%
+  );
+  box-shadow: 0 0 24px rgb(255 255 255 / 8%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}

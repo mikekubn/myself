@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.13/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.3/schema.json",
   "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
   "files": {
     "ignoreUnknown": false,
@@ -8,12 +8,17 @@
       "!**/@types",
       "!**/node_modules",
       "!**/.next",
+      "!dist",
+      "!.tanstack",
       "!**/.vscode",
       "!**/.cursor",
       "!**/.github",
       "!**/.husky",
       "!**/yarn.lock",
-      "!**/.swc"
+      "!**/pnpm-lock.yaml",
+      "!**/.swc",
+      "!**/src/routeTree.gen.ts",
+      "!**/src/styles.css"
     ]
   },
   "css": {
@@ -42,7 +47,7 @@
     },
     "enabled": true,
     "rules": {
-      "recommended": false,
+      "preset": "none",
       "complexity": {
         "noExcessiveCognitiveComplexity": "error",
         "noAdjacentSpacesInRegex": "error",
@@ -83,11 +88,9 @@
         "useValidTypeof": "error",
         "useYield": "error"
       },
-      "nursery": {
-        "noShadow": "error"
-      },
       "security": { "noDangerouslySetInnerHtmlWithChildren": "error" },
       "style": {
+        "noHeadElement": "off",
         "noCommonJs": "error",
         "noNamespace": "error",
         "noNestedTernary": "warn",
@@ -97,6 +100,7 @@
         "useImportType": "error"
       },
       "suspicious": {
+        "noShadow": "error",
         "noEmptyBlockStatements": "off",
         "noAsyncPromiseExecutor": "error",
         "noCatchAssign": "error",
