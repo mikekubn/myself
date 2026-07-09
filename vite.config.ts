@@ -20,10 +20,12 @@ const config = defineConfig({
         retryCount: 2,
         maxRedirects: 5,
         failOnError: true,
+        filter: (page) => page.path !== "/api/markdown",
         onSuccess: ({ page }) => {
           console.log(`Prerendered page: ${page.path}`);
         }
       },
+      pages: [{ path: "/api/markdown", prerender: { enabled: false } }],
       sitemap: {
         enabled: false,
         host: DOMAIN

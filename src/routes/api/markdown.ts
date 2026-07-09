@@ -1,7 +1,7 @@
 import { Readability } from "@mozilla/readability";
 import { createFileRoute } from "@tanstack/react-router";
 
-import { JSDOM } from "jsdom";
+import { parseHTML } from "linkedom";
 import TurndownService from "turndown";
 
 export const Route = createFileRoute("/api/markdown")({
@@ -18,11 +18,13 @@ export const Route = createFileRoute("/api/markdown")({
           }
 
           const html = await response.text();
-          const dom = new JSDOM(html);
-          const reader = new Readability(dom.window.document);
-          const document = reader.parse();
 
-          if (!document || !document.content) {
+          const { document } = parseHTML(html);
+
+          const reader = new Readability(document);
+          const parsed = reader.parse();
+
+          if (!parsed || !parsed.content) {
             throw new Error("Could not parse meaningful content from the HTML.");
           }
 
@@ -32,7 +34,7 @@ export const Route = createFileRoute("/api/markdown")({
             bulletListMarker: "-"
           });
 
-          const markdown = turndownService.turndown(document.content);
+          const markdown = turndownService.turndown(parsed.content);
 
           return new Response(markdown, {
             status: 200,
