@@ -1,11 +1,11 @@
 import { createCsrfMiddleware, createStart } from "@tanstack/react-start";
 
-import { markdownAgentMiddleware } from "#/routes/api/markdown/-middleware";
+import { agentMiddleware } from "#/middlewares/agent";
 
 const csrfMiddleware = createCsrfMiddleware({
   filter: (ctx) => ctx.handlerType === "serverFn"
 });
 
 export const startInstance = createStart(() => ({
-  requestMiddleware: [markdownAgentMiddleware, csrfMiddleware]
+  requestMiddleware: [agentMiddleware, csrfMiddleware]
 }));

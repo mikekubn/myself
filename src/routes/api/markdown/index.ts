@@ -4,7 +4,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { parseHTML } from "linkedom";
 import TurndownService from "turndown";
 
-export const Route = createFileRoute("/api/markdown")({
+export const Route = createFileRoute("/api/markdown/")({
   server: {
     handlers: {
       GET: async () => {
