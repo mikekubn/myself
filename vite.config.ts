@@ -25,7 +25,7 @@ const config = defineConfig({
         }
       },
       sitemap: {
-        enabled: true,
+        enabled: false,
         host: DOMAIN
       }
     }),
