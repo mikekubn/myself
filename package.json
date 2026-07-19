@@ -6,6 +6,7 @@
     "#/*": "./src/*",
     "@/*": "./src/*"
   },
+  "packageManager": "pnpm@11.2.2",
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
