@@ -1,12 +1,13 @@
 {
   "name": "myself",
   "private": true,
+  "version": "1.0.0",
   "type": "module",
   "imports": {
     "#/*": "./src/*",
     "@/*": "./src/*"
   },
-  "packageManager": "pnpm@11.2.2",
+  "packageManager": "pnpm@11.15.0",
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
