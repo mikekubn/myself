@@ -1,4 +1,5 @@
-FROM --platform=$BUILDPLATFORM node:22-alpine AS builder
+ARG NODE_VERSION=24-alpine3.23
+FROM --platform=$BUILDPLATFORM node:${NODE_VERSION} AS builder
 
 WORKDIR /app
 ENV CI=true
@@ -12,7 +13,7 @@ COPY . ./
 RUN pnpm install --frozen-lockfile \
     && pnpm build
 
-FROM node:22-alpine AS runner
+FROM node:${NODE_VERSION} AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
