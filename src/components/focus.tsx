@@ -7,19 +7,28 @@ const areas = [
     number: "01",
     icon: Code2,
     title: "Built to work.",
-    label: "FULL-STACK DEVELOPMENT",
+    label: "FULL-STACK ENGINEERING",
     description:
-      "From the interface to the infrastructure. I build thoughtful web and mobile experiences with maintainable code and performance in mind.",
-    tags: ["Web & mobile", "APIs & architecture", "Developer experience"]
+      "From the interface to the infrastructure. I build thoughtful end-to-end softwares with maintainable code and performance in mind.",
+    tags: [
+      "Web & mobile",
+      "End-to-end",
+      "Services & infrastructure",
+      "APIs & architecture",
+      "Security",
+      "Decision making",
+      "Ownership",
+      "Developer experience"
+    ]
   },
   {
     number: "02",
     icon: ShieldCheck,
     title: "Designed with care.",
-    label: "SECURITY-CONSCIOUS ENGINEERING",
+    label: "SECURITY ENGINEERING",
     description:
       "Security is part of the engineering process. I approach systems with attention to access, data boundaries, and the details that make software more resilient.",
-    tags: ["Secure design", "Identity & access", "Reliable systems"]
+    tags: ["Secure design", "Identity & access", "Reliable systems", "DevSecOps"]
   }
 ];
 
@@ -28,21 +37,14 @@ export function Focus() {
     <section id="focus" className="pt-[76px] [@media(width<=640px)]:pt-12" aria-labelledby="focus-title">
       <div className="mb-[30px] flex items-end justify-between gap-[30px]">
         <div>
-          <p className="flex items-center gap-2.5 font-mono text-[10px] font-medium tracking-[1.7px] text-white [@media(width<=640px)]:text-[8px] [@media(width<=640px)]:tracking-[1px]">
-            02 / FOCUS
-          </p>
           <h2
             className="mt-3.5 text-[clamp(23px,2.6vw,30px)] font-medium leading-[1.3] tracking-[-1px]"
             id="focus-title"
           >
             Two perspectives. Better software.
           </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted">Useful by design & resilient by intention.</p>
         </div>
-        <p className="text-[12px] leading-[1.8] text-muted [@media(width<=640px)]:hidden">
-          Useful by design.
-          <br />
-          Resilient by intention.
-        </p>
       </div>
       <div className="grid grid-cols-2 gap-[18px] [@media(width<=640px)]:grid-cols-1">
         {areas.map(({ number, icon: Icon, title, label, description, tags }) => (
@@ -57,7 +59,6 @@ export function Focus() {
           >
             <div className="mb-9 flex items-center justify-between text-[#818181] [@media(width<=640px)]:mb-7">
               <Icon className="text-white" size={24} strokeWidth={1.5} />
-              <span className="font-mono text-[10px] tracking-[1px]">/ {number}</span>
             </div>
             <p className="flex items-center gap-2.5 font-mono text-[10px] font-medium tracking-[1.7px] text-white [@media(width<=640px)]:text-[8px] [@media(width<=640px)]:tracking-[1px]">
               {label}

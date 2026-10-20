@@ -1,5 +1,5 @@
 const BIO =
-  "Digital craftsman building reliable, user-centric applications across the modern web stack. I design end-to-end solutions that balance performance, security, and developer experience." as const;
+  "Digital craftsman building reliable, user-centric applications across the modern web stack. I have experienced designing and building end-to-end solutions that balance performance, security, and developer experience." as const;
 
 const KEYWORDS = [
   "Software Engineer",
@@ -22,20 +22,31 @@ const KEYWORDS = [
   "Langchain"
 ] as const;
 
-const LANGUAGES = ["TypeScript", "JavaScript", "Python", "SQL"] as const;
-
-const LIBRARIES = ["React", "Vue"] as const;
-
-const FRAMEWORKS = [
-  { name: "NestJS", icon: "/technologies/nestjs.svg" },
-  { name: "Next.js", icon: "/technologies/nextdotjs.svg" },
-  { name: "TanStack", icon: "/technologies/tanstack.svg" },
-  { name: "Nuxt", icon: "/technologies/nuxt.svg" },
-  { name: "Django", icon: "/technologies/django.svg" },
-  { name: "PostgreSQL", icon: "/technologies/postgresql.svg" },
-  { name: "Prisma", icon: "/technologies/prisma.svg" },
-  { name: "Expo", icon: "/technologies/expo.svg" },
-  { name: "Langchain", icon: "/technologies/langchain.svg" }
+const STACK = [
+  "TypeScript",
+  "JavaScript",
+  "Python",
+  "PostgreSQL",
+  "Prisma",
+  "SQLAlchemy",
+  "React",
+  "React Native",
+  "Vue",
+  "Next.js",
+  "Nuxt",
+  "Expo",
+  "NestJS",
+  "FastAPI",
+  "Kotlin",
+  "Langchain",
+  "Helm Charts",
+  "Kubernetes",
+  "GitOps",
+  "Apache APISIX",
+  "Keycloak",
+  "OAuth2",
+  "OpenID Connect",
+  "Cloudflare"
 ] as const;
 
 const SOCIAL_LINKS = [
@@ -53,4 +64,4 @@ const SOCIAL_LINKS = [
 
 const DOMAIN = "https://mikekubn.cz" as const;
 
-export { BIO, DOMAIN, FRAMEWORKS, KEYWORDS, LANGUAGES, LIBRARIES, SOCIAL_LINKS };
+export { BIO, DOMAIN, KEYWORDS, SOCIAL_LINKS, STACK };

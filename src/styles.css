@@ -7,6 +7,18 @@
   --color-border: #2e2e2e;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --animate-project-expand: project-expand 220ms ease-out;
+  --animate-project-collapse: project-collapse 180ms ease-in;
+
+  @keyframes project-expand {
+    from { height: 0; opacity: 0; }
+    to { height: var(--radix-accordion-content-height); opacity: 1; }
+  }
+
+  @keyframes project-collapse {
+    from { height: var(--radix-accordion-content-height); opacity: 1; }
+    to { height: 0; opacity: 0; }
+  }
 }
 
 @layer base {

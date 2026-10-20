@@ -1,13 +1,13 @@
 import { Focus } from "#/components/focus";
 import { Hero } from "#/components/hero";
-import { Technologies } from "#/components/technologies";
+import { ProjectHistory } from "#/components/project-history";
 
 export function Main() {
   return (
     <main id="main">
       <Hero />
       <Focus />
-      <Technologies />
+      <ProjectHistory />
     </main>
   );
 }

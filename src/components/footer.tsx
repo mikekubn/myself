@@ -13,9 +13,6 @@ export function Footer() {
         <p className="mt-1.5 text-[12px] text-[#9a9a9a]">Thoughtful software. Security in mind.</p>
       </div>
       <SocialLinks />
-      <span className="font-mono text-[9px] tracking-[1px] text-[#909090] [@media(width<=900px)]:hidden">
-        BUILT WITH INTENTION
-      </span>
     </footer>
   );
 }

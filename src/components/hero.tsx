@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUpRight, Terminal } from "lucide-react";
 import { BinaryDnaAnimation } from "#/components/binary-dna-animation";
-import { BIO, LANGUAGES, SOCIAL_LINKS } from "#/configs/portfolio";
+import { BIO, SOCIAL_LINKS, STACK } from "#/configs/portfolio";
 
 export function Hero() {
   return (
@@ -57,7 +57,7 @@ export function Hero() {
               className="mt-3 mb-[26px] flex list-none flex-wrap gap-x-6 gap-y-2.5 p-0 text-[12px] text-[#b1b1b1] [@media(width<=640px)]:gap-x-[18px] [@media(width<=640px)]:text-[10px]"
               aria-label="Programming languages"
             >
-              {LANGUAGES.map((language) => (
+              {STACK.map((language) => (
                 <li key={language}>{language}</li>
               ))}
             </ul>
