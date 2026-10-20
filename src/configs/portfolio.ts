@@ -3,6 +3,8 @@ const BIO =
 
 const KEYWORDS = [
   "Software Engineer",
+  "Cybersecurity",
+  "Secure Software Development",
   "Full Stack Developer",
   "TypeScript",
   "JavaScript",

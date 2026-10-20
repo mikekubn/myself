@@ -1,6 +1,6 @@
 import appCss from "../styles.css?url";
 
-import { DOMAIN } from "./portfolio";
+import { BIO, DOMAIN } from "./portfolio";
 
 const METADATA_META: React.MetaHTMLAttributes<HTMLMetaElement>[] = [
   {
@@ -11,7 +11,7 @@ const METADATA_META: React.MetaHTMLAttributes<HTMLMetaElement>[] = [
     content: "width=device-width, initial-scale=1"
   },
   {
-    title: "Mike - Software Engineer"
+    title: "Mike — Software Engineering & Cybersecurity"
   },
   {
     property: "og:image",
@@ -19,19 +19,19 @@ const METADATA_META: React.MetaHTMLAttributes<HTMLMetaElement>[] = [
   },
   {
     property: "og:title",
-    content: "Mike - Software Engineer"
+    content: "Mike — Software Engineering & Cybersecurity"
   },
   {
     property: "og:description",
-    content: "Make things better."
+    content: BIO
   },
   {
     property: "og:type",
     content: "website"
   },
   { name: "twitter:card", content: "summary_large_image" },
-  { name: "twitter:title", content: "Mike - Software Engineer" },
-  { name: "twitter:description", content: "Make things better." },
+  { name: "twitter:title", content: "Mike — Software Engineering & Cybersecurity" },
+  { name: "twitter:description", content: BIO },
   { name: "twitter:image", content: "https://cdn.mikekubn.cz/og-image-mk.png" }
 ];
 
