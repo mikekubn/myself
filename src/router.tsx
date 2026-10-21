@@ -3,12 +3,9 @@ import { createRouter } from "@tanstack/react-router";
 import { NotFound } from "./components/not-found";
 import { routeTree } from "./routeTree.gen";
 
-export function getRouter(nonce?: string) {
+export function getRouter() {
   const router = createRouter({
     routeTree,
-    ssr: {
-      nonce
-    },
     scrollRestoration: true,
     defaultPreload: "intent",
     defaultPreloadStaleTime: 0,
